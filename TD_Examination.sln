@@ -23,17 +23,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examination", "Examination"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{C59F3383-D4DE-4A68-A4BA-BCA103C6D58F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Dto", "Examination.Dto\Examination.Dto.csproj", "{761BD812-BEE7-4D81-9099-21B5E67EF673}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Dto", "src\BuildingBlocks\Examination.Dto\Examination.Dto.csproj", "{761BD812-BEE7-4D81-9099-21B5E67EF673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.API", "Examination.API\Examination.API.csproj", "{E59CA6F7-C97F-439C-BDEF-181A5BE70D4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.API", "src\Examination\Examination.API\Examination.API.csproj", "{E59CA6F7-C97F-439C-BDEF-181A5BE70D4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Application", "Examination.Application\Examination.Application.csproj", "{64186C96-70CE-4C64-90A2-5E02A91FA30E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Application", "src\Examination\Examination.Application\Examination.Application.csproj", "{64186C96-70CE-4C64-90A2-5E02A91FA30E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Domain", "Examination.Domain\Examination.Domain.csproj", "{EF86BD75-C1BE-455B-83BB-6451BCA6CE9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Domain", "src\Examination\Examination.Domain\Examination.Domain.csproj", "{EF86BD75-C1BE-455B-83BB-6451BCA6CE9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Infrastructure", "Examination.Infrastructure\Examination.Infrastructure.csproj", "{48952E1E-B516-418B-9AD3-4BFBF7B27401}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Infrastructure", "src\Examination\Examination.Infrastructure\Examination.Infrastructure.csproj", "{48952E1E-B516-418B-9AD3-4BFBF7B27401}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "Identity.API\Identity.API.csproj", "{1D554147-ADA0-4FBB-985E-96AAE5AAAFDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "src\Identity\Identity.API\Identity.API.csproj", "{1D554147-ADA0-4FBB-985E-96AAE5AAAFDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
