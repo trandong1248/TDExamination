@@ -1,0 +1,87 @@
+2022-09-04 06:44:28.830 +07:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {2c1e8df1-ec4c-48f9-b1f3-4f5f07ae4d83} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
+2022-09-04 09:12:16.019 +07:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {2c1e8df1-ec4c-48f9-b1f3-4f5f07ae4d83} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
+2022-09-04 09:13:44.993 +07:00 [ERR] Unknown client or not enabled: exam_api_swaggerui123
+{"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"ffc50f04-0aa4-4f09-becf-d2bc8918182f","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"token","client_id":"exam_api_swaggerui123","redirect_uri":"https://localhost:5002/swagger/oauth2-redirect.html","scope":"exam_api_swaggerui","state":"U3VuIFNlcCAwNCAyMDIyIDA5OjEzOjQ0IEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk="},"$type":"AuthorizeRequestValidationLog"}
+2022-09-04 09:13:45.033 +07:00 [ERR] Request validation failed
+2022-09-04 09:13:53.888 +07:00 [ERR] Invalid grant type for client: implicit
+{"ClientId":"exam_api_swaggerui","ClientName":"Exam API Swagger UI","RedirectUri":"https://localhost:5002/swagger/oauth2-redirect.html","AllowedRedirectUris":["https://localhost:5002/swagger/oauth2-redirect.html"],"SubjectId":"ffc50f04-0aa4-4f09-becf-d2bc8918182f","ResponseType":"token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"","State":"U3VuIFNlcCAwNCAyMDIyIDA5OjEzOjUzIEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"token","client_id":"exam_api_swaggerui","redirect_uri":"https://localhost:5002/swagger/oauth2-redirect.html","scope":"exam_api_swaggerui","state":"U3VuIFNlcCAwNCAyMDIyIDA5OjEzOjUzIEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk="},"$type":"AuthorizeRequestValidationLog"}
+2022-09-04 09:13:53.911 +07:00 [ERR] Request validation failed
+2022-09-04 09:14:17.507 +07:00 [ERR] Invalid grant type for client: implicit
+{"ClientId":"exam_api_swaggerui","ClientName":"Exam API Swagger UI","RedirectUri":"https://localhost:5002/swagger/oauth2-redirect.html","AllowedRedirectUris":["https://localhost:5002/swagger/oauth2-redirect.html"],"SubjectId":"ffc50f04-0aa4-4f09-becf-d2bc8918182f","ResponseType":"token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"","State":"U3VuIFNlcCAwNCAyMDIyIDA5OjE0OjE3IEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"token","client_id":"exam_api_swaggerui","redirect_uri":"https://localhost:5002/swagger/oauth2-redirect.html","state":"U3VuIFNlcCAwNCAyMDIyIDA5OjE0OjE3IEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk="},"$type":"AuthorizeRequestValidationLog"}
+2022-09-04 09:14:17.528 +07:00 [ERR] Request validation failed
+2022-09-04 09:14:17.537 +07:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {2c1e8df1-ec4c-48f9-b1f3-4f5f07ae4d83} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
+2022-09-04 09:14:33.786 +07:00 [ERR] Invalid grant type for client: implicit
+{"ClientId":"exam_api_swaggerui","ClientName":"Exam API Swagger UI","RedirectUri":"https://localhost:5002/swagger/oauth2-redirect.html","AllowedRedirectUris":["https://localhost:5002/swagger/oauth2-redirect.html"],"SubjectId":"anonymous","ResponseType":"token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"","State":"U3VuIFNlcCAwNCAyMDIyIDA5OjE0OjMzIEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"token","client_id":"exam_api_swaggerui","redirect_uri":"https://localhost:5002/swagger/oauth2-redirect.html","state":"U3VuIFNlcCAwNCAyMDIyIDA5OjE0OjMzIEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk="},"$type":"AuthorizeRequestValidationLog"}
+2022-09-04 09:14:33.823 +07:00 [ERR] Request validation failed
+2022-09-04 09:17:49.756 +07:00 [ERR] Invalid grant type for client: implicit
+{"ClientId":"exam_api_swaggerui","ClientName":"Exam API Swagger UI","RedirectUri":"https://localhost:5002/swagger/oauth2-redirect.html","AllowedRedirectUris":["https://localhost:5002/swagger/oauth2-redirect.html"],"SubjectId":"ffc50f04-0aa4-4f09-becf-d2bc8918182f","ResponseType":"token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"","State":"U3VuIFNlcCAwNCAyMDIyIDA5OjE3OjQ5IEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"token","client_id":"exam_api_swaggerui","redirect_uri":"https://localhost:5002/swagger/oauth2-redirect.html","scope":"exam_api_swaggerui","state":"U3VuIFNlcCAwNCAyMDIyIDA5OjE3OjQ5IEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk="},"$type":"AuthorizeRequestValidationLog"}
+2022-09-04 09:17:49.872 +07:00 [ERR] Request validation failed
+2022-09-04 09:17:49.970 +07:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {acb7f204-212a-4407-93da-cdbc93f33234} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
+2022-09-04 09:18:31.214 +07:00 [ERR] Invalid grant type for client: implicit
+{"ClientId":"exam_api_swaggerui","ClientName":"Exam API Swagger UI","RedirectUri":"https://localhost:5002/swagger/oauth2-redirect.html","AllowedRedirectUris":["https://localhost:5002/swagger/oauth2-redirect.html"],"SubjectId":"ffc50f04-0aa4-4f09-becf-d2bc8918182f","ResponseType":"token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"","State":"U3VuIFNlcCAwNCAyMDIyIDA5OjE4OjMxIEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"token","client_id":"exam_api_swaggerui","redirect_uri":"https://localhost:5002/swagger/oauth2-redirect.html","state":"U3VuIFNlcCAwNCAyMDIyIDA5OjE4OjMxIEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk="},"$type":"AuthorizeRequestValidationLog"}
+2022-09-04 09:18:31.233 +07:00 [ERR] Request validation failed
+2022-09-04 09:23:37.858 +07:00 [ERR] Invalid grant type for client: implicit
+{"ClientId":"exam_api_swaggerui","ClientName":"Exam API Swagger UI","RedirectUri":"https://localhost:5002/swagger/oauth2-redirect.html","AllowedRedirectUris":["https://localhost:5002/swagger/oauth2-redirect.html"],"SubjectId":"ffc50f04-0aa4-4f09-becf-d2bc8918182f","ResponseType":"token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"","State":"U3VuIFNlcCAwNCAyMDIyIDA5OjIzOjM3IEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"token","client_id":"exam_api_swaggerui","redirect_uri":"https://localhost:5002/swagger/oauth2-redirect.html","state":"U3VuIFNlcCAwNCAyMDIyIDA5OjIzOjM3IEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk="},"$type":"AuthorizeRequestValidationLog"}
+2022-09-04 09:23:37.966 +07:00 [ERR] Request validation failed
+2022-09-04 09:23:37.999 +07:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {856a1359-304a-4fb6-a36a-f7761f7d0fbe} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
+2022-09-04 09:28:09.845 +07:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {856a1359-304a-4fb6-a36a-f7761f7d0fbe} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
+2022-09-04 09:28:40.475 +07:00 [ERR] Invalid grant type for client: implicit
+{"ClientId":"exam_api_swaggerui","ClientName":"Exam API Swagger UI","RedirectUri":"https://localhost:5002/swagger/oauth2-redirect.html","AllowedRedirectUris":["https://localhost:5002/swagger/oauth2-redirect.html"],"SubjectId":"ffc50f04-0aa4-4f09-becf-d2bc8918182f","ResponseType":"token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"","State":"U3VuIFNlcCAwNCAyMDIyIDA5OjI4OjQwIEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk=","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"response_type":"token","client_id":"exam_api_swaggerui","redirect_uri":"https://localhost:5002/swagger/oauth2-redirect.html","scope":"exam_api","state":"U3VuIFNlcCAwNCAyMDIyIDA5OjI4OjQwIEdNVCswNzAwIChHaeG7nSDEkMO0bmcgRMawxqFuZyk="},"$type":"AuthorizeRequestValidationLog"}
+2022-09-04 09:28:40.515 +07:00 [ERR] Request validation failed
+2022-09-04 09:28:40.597 +07:00 [ERR] An exception was thrown while deserializing the token.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {9195276d-c965-4920-afc8-5acde55ee4c3} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)
