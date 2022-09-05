@@ -4,7 +4,6 @@ using Examination.Infrastructure.SeedWork;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Serilog;
@@ -103,7 +102,6 @@ try
             .SeedAsync(mongoClient, settings, logger)
             .Wait();
     }
-
 
     app.Run();
 }

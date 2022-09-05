@@ -5,14 +5,18 @@
         "Name": "roles",
         "Enabled": true,
         "DisplayName": "Roles",
-        "UserClaims": [ "role" ]
+        "UserClaims": [
+          "role"
+        ]
       },
       {
         "Name": "openid",
         "Enabled": true,
         "Required": true,
         "DisplayName": "Your user identifier",
-        "UserClaims": [ "sub" ]
+        "UserClaims": [
+          "sub"
+        ]
       },
       {
         "Name": "profile",
@@ -42,26 +46,37 @@
         "Enabled": true,
         "DisplayName": "Your email address",
         "Emphasize": true,
-        "UserClaims": [ "email", "email_verified" ]
+        "UserClaims": [
+          "email",
+          "email_verified"
+        ]
       },
       {
         "Name": "address",
         "Enabled": true,
         "DisplayName": "Your address",
         "Emphasize": true,
-        "UserClaims": [ "address" ]
+        "UserClaims": [
+          "address"
+        ]
+      }
+    ],
+    "ApiScopes": [
+      {
+        "Name": "exam_api",
+        "DisplayName": "exam_api",
+        "Required": true,
+        "UserClaims": [
+          "role",
+          "name"
+        ]
       }
     ],
     "ApiResources": [
       {
         "Name": "exam_api",
         "Scopes": [
-          {
-            "Name": "exam_api",
-            "DisplayName": "exam_api",
-            "Required": true,
-            "UserClaims": [ "role", "name" ]
-          }
+          "exam_api"
         ]
       }
     ],

@@ -1,7 +1,6 @@
 ﻿using Examination.API.Configurations;
 using Examination.API.Filters;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
 namespace Examination.API.Installers
@@ -9,12 +8,14 @@ namespace Examination.API.Installers
     public class SwaggerInstaller : IInstaller
     {
         private readonly AdminApiConfiguration _adminApiConfiguration = new AdminApiConfiguration();
+
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
             configuration.GetSection("AdminApiConfiguration").Bind(_adminApiConfiguration);
 
             // ==>> ApiVersioning
-            services.AddApiVersioning(option => {
+            services.AddApiVersioning(option =>
+            {
                 option.ReportApiVersions = true;
             });
 
@@ -35,7 +36,7 @@ namespace Examination.API.Installers
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc(_adminApiConfiguration.ApiVersion, new OpenApiInfo { Title = _adminApiConfiguration.ApiName, Version = _adminApiConfiguration.ApiVersion});
+                c.SwaggerDoc(_adminApiConfiguration.ApiVersion, new OpenApiInfo { Title = _adminApiConfiguration.ApiName, Version = _adminApiConfiguration.ApiVersion });
                 c.SwaggerDoc("v2", new OpenApiInfo { Title = "Examination.API V2", Version = "v2" });
 
                 c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
@@ -48,7 +49,7 @@ namespace Examination.API.Installers
                             AuthorizationUrl = new Uri($"{_adminApiConfiguration.IdentityServerBaseUrl}/connect/authorize"),
                             TokenUrl = new Uri($"{_adminApiConfiguration.IdentityServerBaseUrl}/connect/token"),
                             Scopes = new Dictionary<string, string> {
-                                { _adminApiConfiguration.OidcApiName, _adminApiConfiguration.ApiName }
+                                { _adminApiConfiguration.OidcApiName, _adminApiConfiguration.OidcApiName }
                             }
                         }
                     }
@@ -58,13 +59,9 @@ namespace Examination.API.Installers
 
             services.AddAuthentication(options =>
             {
-                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultSignInScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultForbidScheme = JwtBearerDefaults.AuthenticationScheme;
-
-            }).AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+            }).AddJwtBearer(options =>
             {
                 options.Authority = _adminApiConfiguration.IdentityServerBaseUrl;
                 options.RequireHttpsMetadata = _adminApiConfiguration.RequireHttpsMetadata;
